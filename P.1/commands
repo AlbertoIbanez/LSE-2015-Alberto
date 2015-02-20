@@ -1,0 +1,23 @@
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+sudo apt-get update
+sudo apt-get install gcc-arm-none-eabi
+
+sudo apt-get remove binutils-arm-none-eabi gcc-arm-none-eabi
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded
+sudo apt-get update
+sudo apt-get install gcc-arm-none-eabi=4.9.3.2014q4-0trusty12
+
+//OpenJDK
+sudo add-apt-repository ppa:openjdk/ppa
+sudo apt-get update
+sudo apt-get install openjdk-7-jdk
+
+//Instal Oracle Java. First, remove installed OpenJDK
+sudo apt-get purge openjdk*
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+
+//Eclipse
+sudo apt-get install eclipse-platform
+sudo apt-get install eclipse-cdt
